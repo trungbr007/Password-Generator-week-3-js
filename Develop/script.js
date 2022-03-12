@@ -33,7 +33,6 @@ function writePassword() {
   }
 };
 
-
 function getPrompts(){
   choiceArray=[];
   charLenght=parseInt(prompt("How many character would you like your password to be? (Should be from 8 to 128)"));
@@ -59,9 +58,11 @@ function getPrompts(){
       return true;
     }
     
+    // max charLenght =128 
+
     function generatePassword () { 
       var password ="";
-      for( var i=0; i<charLenght;i++){
+      for( var i=1;i<charLenght;i++){
         var randomTexts= Math.floor(Math.random()*choiceArray.length);
         password= password + choiceArray[randomTexts]};
     
